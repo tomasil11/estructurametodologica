@@ -1,18 +1,42 @@
 .contenedor {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 8vh 25vh auto;
-    gap: 16px;
-}
-
-.tituloPrincipal {
-    display:grid;
-    grid-template-columns: 1fr;
-    
+    grid-template-areas: 
+    "header header header"
+    "img encabezado encabezado"
+    "sidebar main main"
+    "footer footer footer";
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 100px 150px 1fr 50px;
+    gap: 10px;
 }
 
 header {
+    grid-area: header;
+    padding: 16px;
+    gap: 12px;
+}
+
+.escudo {
+    grid-area: img;
+}
+
+.encabezado {
+    grid-area: encabezado;
+}
+
+nav {
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    
+}
+
+footer {
+    grid-area: footer;
+
 }

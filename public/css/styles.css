@@ -18,7 +18,7 @@ body {
     height: 100vh;
     border: 2px solid #32b091;
     border-radius: 8px;
-    background: linear-gradient(45deg, rgba(0, 255, 0, 0.5), rgba(255, 255, 255, 0.5), rgba(0, 0, 255, 0.5));
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.5), rgba(255, 255, 255, 0.5), rgba(13, 13, 28, 0.5));
 }
 
 .tituloh1 {
@@ -35,9 +35,9 @@ header {
     border-radius: 5px;
 }
 
-header img {
-    width: 40%;
-    height: 180px;
+.escudo img {
+    width: 50%;
+    height: 150px;
 
 }
 
@@ -45,6 +45,9 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(15deg, rgba(11, 11, 16, 0.5), rgba(0, 255, 0, 0.5));
+    border: 2px solid #32b091;
+    border-radius: 5px;
 }
 
 .encabezado {
@@ -55,20 +58,37 @@ header img {
     font-size: 1.7em;
     font-weight: bold;
     justify-content: space-between;
-    
+    background: linear-gradient(15deg, rgba(11, 11, 16, 0.5), rgba(0, 255, 0, 0.5));
+    border: 2px solid #32b091;
+    border-radius: 5px;
 }
 
 
 
 nav {
     background-color: aquamarine;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 main {
     background-color: blue;
+    padding: 16px;
+
+}
+
+.card {
+    background-color: chocolate;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
     background-color: aliceblue;
-
+    padding: 16px;
+    text-align: center;
 }
