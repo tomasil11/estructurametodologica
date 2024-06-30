@@ -45,7 +45,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(15deg, rgba(11, 11, 16, 0.5), rgba(0, 255, 0, 0.5));
+    background: linear-gradient(70deg, rgba(11, 11, 16, 0.5), rgb(135, 206, 235), rgba(0, 255, 0, 0.5));
     border: 2px solid #32b091;
     border-radius: 5px;
 }
@@ -58,7 +58,7 @@ header {
     font-size: 1.7em;
     font-weight: bold;
     justify-content: space-between;
-    background: linear-gradient(15deg, rgba(11, 11, 16, 0.5), rgba(0, 255, 0, 0.5));
+    background: linear-gradient(65deg, rgba(11, 11, 16, 0.5), rgba(0, 255, 0, 0.5), rgb(135, 206, 235));
     border: 2px solid #32b091;
     border-radius: 5px;
 }
@@ -66,7 +66,7 @@ header {
 
 
 nav {
-    background-color: aquamarine;
+    background:linear-gradient(15deg, rgba(11, 11, 16, 0.5), rgb(135, 206, 235), rgba(243, 243, 11, 0.5));
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -74,9 +74,9 @@ nav {
 }
 
 main {
-    background-color: blue;
-    padding: 16px;
-
+    background: linear-gradient(15deg, rgba(243, 243, 11, 0.5), rgb(135, 206, 235),  rgba(11, 11, 16, 0.5));
+    padding: 10px;
+    
 }
 
 .card {
@@ -86,9 +86,64 @@ main {
     justify-content: center;
     align-items: center;
 }
+/* CÓDIGO PARA SIMULAR UN BOTÓN PARA LOS ENLACES*/
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(12, 98, 12, 0.5);
+    text-decoration: none;
+    text-align: center;
+  }
+
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: rgba(12, 98, 12, 0.5);
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.boton::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #c4b107;
+    position: absolute;
+    z-index: 1;
+    top: -50px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+.boton span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton:hover::after {
+    top: 0;
+}
+/* FIN CÓDIGO BOTONES CON ENLACES */
+
 
 footer {
-    background-color: aliceblue;
+    background: linear-gradient(65deg, rgba(0, 255, 0, 0.5), rgba(11, 11, 16, 0.5));
     padding: 16px;
-    text-align: center;
+    text-align: right;
 }
+
+
