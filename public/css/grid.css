@@ -30,20 +30,13 @@ nav {
 
 main {
     grid-area: main;
-    display: grid;
-    grid-template-areas: 
-    "article article article"
-    "card1 card2 card3"
-    "card4 card5 card6";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 12px;
     overflow-y: auto;   
 }
 
-article {
-    grid-area: article;
-}
+
 
 footer {
     grid-area: footer;
