@@ -1,0 +1,87 @@
+@media(max-width:600px) {
+    .contenedor {
+        background-color: blue;
+        height: 100%;
+        grid-template-areas: 
+            "header "
+            "titulo"
+            "sidebar"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 180px 1fr 500px 50px;
+        gap: 10px;
+    }
+
+    .escudo {
+        visibility: hidden;
+    }
+
+    .encabezado {
+        font-size: 1em;
+    }
+
+    .tituloh1 {
+        font-size: 1.2em;
+    }
+
+    .cfooter {
+        font-size: 0.8em;
+    }
+    
+}
+
+@media (min-width: 601px) and (max-width: 768px) { 
+    .contenedor {
+        background-color: rgb(211, 91, 22);
+        height: 100%;
+        grid-template-areas: 
+            "header header"
+            "titulo titulo"
+            "sidebar main"
+            "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 80px 200px 500px 50px;
+        gap: 10px;
+    }
+
+    .escudo {
+        visibility: hidden;
+    }
+
+    .encabezado {
+        font-size: 1.4em;
+    }
+
+    .tituloh1 {
+        font-size: 1.6em;
+    }
+    
+    .cfooter {
+        font-size: 0.7em;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width:1024px) {
+
+    .contenedor {
+        background-color: rgb(196, 196, 188);
+        grid-template-areas: 
+        "header header header"
+        "img titulo titulo"
+        "sidebar main main"
+        "footer footer footer";
+        grid-template-columns: 300px 1fr 1fr;
+        grid-template-rows: 100px 160px 1fr 50px;
+        gap: 10px;
+    }
+
+    .encabezado {
+        font-size: 1.2em;
+    }
+
+    .cfooter {
+        font-size: 0.9em;
+    }
+}
