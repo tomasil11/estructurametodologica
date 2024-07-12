@@ -69,6 +69,7 @@
 
     .contenedor {
         background-color: rgb(196, 196, 188);
+        height: 100%;
         grid-template-areas: 
         "header header header"
         "img titulo titulo"
