@@ -10,7 +10,7 @@
             "main"
             "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 80px 180px 1fr 500px 50px;
+        grid-template-rows: 80px 120px 1fr 500px 50px;
         gap: 10px;
     }
 
@@ -19,7 +19,7 @@
     }
 
     .encabezado {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .tituloh1 {
@@ -28,6 +28,11 @@
 
     .cfooter {
         font-size: 0.8em;
+    }
+
+    .button-link {
+        margin-bottom: 3px;
+  
     }
     
 }
@@ -53,6 +58,7 @@
 
     .encabezado {
         font-size: 1.4em;
+        
     }
 
     .tituloh1 {
@@ -76,12 +82,13 @@
         "sidebar main main"
         "footer footer footer";
         grid-template-columns: 300px 1fr 1fr;
-        grid-template-rows: 100px 160px 1fr 50px;
+        grid-template-rows: 100px 160px 500px 50px;
         gap: 10px;
     }
 
     .encabezado {
         font-size: 1.2em;
+        overflow: hidden;
     }
 
     .cfooter {
