@@ -120,6 +120,20 @@ article {
     padding: 16px;
 }
 
+.parrafoCards {
+    background-color: rgb(211 211 211 / 70%);
+    color:#333533;
+    font-size: 1.2em;
+    margin: auto 30px;
+    padding: 10px;
+    border: 3px solid #227877;
+    box-sizing: border-box;
+}
+
+.tituloh3 {
+    margin: 10px 0;
+}
+
 /* CÓDIGO PARA SIMULAR UN BOTÓN PARA LOS ENLACES*/
 
 .button-link {

@@ -4,7 +4,7 @@ let cards = [
     {
         titulo: "Título card1",
         tipo: "Vídeo",
-        img: "images/botonVideo01.png",
+        img: "images/iconos/botonVideo01.png",
         ancho: 40,
         alto: 40,
         nombre: "Nombre de la actividad"
