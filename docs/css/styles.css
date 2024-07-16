@@ -108,9 +108,10 @@ main {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    margin: auto 30px;
     color:#1D2028;
-    gap: 10px;
+    gap: 16px;
 }
 
 article {
@@ -132,6 +133,14 @@ article {
 
 .tituloh3 {
     margin: 10px 0;
+    color:#333533;
+    
+}
+
+.videoCards {
+    display: block;
+    /* box-sizing: border-box; */
+    text-align: center;
 }
 
 /* CÓDIGO PARA SIMULAR UN BOTÓN PARA LOS ENLACES*/
