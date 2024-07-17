@@ -139,7 +139,11 @@ article {
 
 .videoCards {
     display: block;
-    /* box-sizing: border-box; */
+    text-align: center;
+}
+
+.imagesCards {
+    display: block;
     text-align: center;
 }
 

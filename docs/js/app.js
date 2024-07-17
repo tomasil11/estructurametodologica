@@ -18,6 +18,14 @@ let cards = [
         ancho: 50,
         alto: 50,
         nombre: "Tipología Textual"
+    },
+    {
+        titulo: "Actividad #3",
+        tipo: "Infografía",
+        img: "images/iconos/images.png",
+        ancho: 50,
+        alto: 50,
+        nombre: "Tipologías Textuales" 
     }
 
 ]
@@ -52,3 +60,18 @@ imgElement02.height = cards[1].alto;
 contenedorImages02.appendChild(imgElement02);
 
 // Fin código ingreso card2
+
+// Código ingreso de la card 3
+document.getElementById("titulo-card3").innerHTML = cards[2].titulo;
+document.getElementById("tipo-card3").innerHTML = cards[2].tipo;
+let contenedorImages03 = document.getElementById("images-card3");
+document.getElementById("actividad-card3").innerHTML = cards[2].nombre;
+
+
+let imgElement03 = document.createElement("img");
+imgElement03.src = cards[2].img;
+imgElement03.width = cards[2].ancho;
+imgElement03.height = cards[2].alto;
+contenedorImages03.appendChild(imgElement03);
+
+// Fin código ingreso card3
