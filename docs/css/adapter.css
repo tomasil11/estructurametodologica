@@ -1,7 +1,6 @@
 /* Dispositivos móviles screen pequeña */
 @media(max-width:600px) {
     .contenedor {
-        background-color: blue;
         height: 100vh;
         grid-template-areas: 
             "header "
@@ -44,15 +43,14 @@
 /* Dispositivos tablets */
 @media (min-width: 601px) and (max-width: 768px) { 
     .contenedor {
-        background-color: rgb(211, 91, 22);
-        height: 100vh;
+        min-height: 100vh;
         grid-template-areas: 
             "header header"
             "titulo titulo"
             "sidebar main"
             "footer footer";
         grid-template-columns: 50% 50%;
-        grid-template-rows: 60px 160px 320px 30px;
+        grid-template-rows: 60px 160px auto min-content;
         gap: 10px;
     }
 
@@ -67,7 +65,17 @@
 
     .encabezado {
         font-size: 1.2em;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        font-size: 1.7em;
+        font-weight: bold;
+        color: #4682B4;
+        justify-content: space-between;
+        background: linear-gradient(30deg, rgb(248, 248, 255), rgb(173, 216, 230), #FFFFF0);
+        border: 2px solid #32b091;
+        border-radius: 5px;
     }
 
     .tituloh1 {
@@ -83,16 +91,15 @@
 @media (min-width: 769px) and (max-width:1365px) {
 
     .contenedor {
-        background-color: rgb(245, 239, 240);
-        height: 100vh;
+        min-height: 100vh;
         grid-template-areas: 
         "header header header"
         "img titulo titulo"
         "sidebar main main"
         "footer footer footer";
         grid-template-columns: 300px 1fr 1fr;
-        grid-template-rows: 60px 100px 400px 30px;
-        gap: 10px;
+        grid-template-rows: 40px 80px 1fr min-content;;
+        gap: 5px;
     }
 
     header, .escudo, .encabezado, nav, main, footer {
@@ -112,5 +119,13 @@
         height: 90px;
     
     }
+
+    .tituloh6 {
+    margin: 10px 0;
+    color:#4682B4;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+}
     
 }
