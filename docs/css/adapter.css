@@ -98,7 +98,7 @@
         "sidebar main main"
         "footer footer footer";
         grid-template-columns: 300px 1fr 1fr;
-        grid-template-rows: 40px 80px 1fr min-content;;
+        grid-template-rows: 60px 100px 1fr min-content;;
         gap: 5px;
     }
 
