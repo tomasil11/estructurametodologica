@@ -220,3 +220,12 @@ footer {
     padding: 16px;
     text-align: right;
 }
+
+.videoExplicativo {
+    display: block;
+}
+
+.imagenEfecto {
+    border-radius: 5px;
+}
+
